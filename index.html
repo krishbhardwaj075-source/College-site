@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCM DAV College, Kangra H.P</title>
+  <style>
+    /* MAIN BODY OF WEBSITE */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: wheat;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* LOGO OF COLLEGE */
+    .lt {
+      width: 100px;
+      height: auto;
+      mix-blend-mode: darken;
+      margin-left: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0b3f33;
+      margin-top: 10px;
+      font-size: 24px;
+    }
+
+    /* CONTACT SHOWN ON TOP RIGHT OF WEBSITE */
+    .contact {
+      text-align: right;
+      padding: 10px;
+    }
+
+    .contact h6 {
+      font-size: 14px;
+      margin-right: 20px;
+      margin-top: 5px;
+    }
+
+    /* BAR THAT CONTAINS VARIOUS TABS */
+    .bar ul {
+      list-style-type: none;
+      background-color: #0b3f33;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .bar ul li {
+      display: inline-block;
+    }
+
+    .bar a {
+      color: rgb(200, 225, 203);
+      text-decoration: none;
+      padding: 12px 15px;
+      display: block;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .bar a:hover {
+      background-color: #023429;
+    }
+
+    /* IMAGES BELOW THE MENU AREA */
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 15px;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    .images img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    /* DESCRIPTION ABOUT COLLEGE */
+    .c {
+      padding: 15px;
+      width: 90%;
+      margin: 15px auto;
+      font-size: 16px;
+      text-align: justify;
+      line-height: 1.6;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 8px;
+    }
+
+    /* BAR WHERE NAME AND MENTION OF PRINCIPAL MENTIONED */
+    .con {
+      background-color: #0b3f33;
+      width: 90%;
+      margin: 20px auto;
+      padding: 10px 15px;
+      border-radius: 8px 8px 0 0;
+    }
+
+    #a {
+      color: #02a57f;
+      margin: 5px 0;
+      font-size: 18px;
+    }
+
+    #b {
+      color: white;
+      margin: 5px 0;
+      font-size: 20px;
+    }
+
+    /* IMAGE ALIGNMENT OF PRINCIPAL */
+    #left {
+      width: 150px;
+      height: auto;
+      margin-left: 5%;
+      border-radius: 0 0 0 8px;
+    }
+
+    /* MESSAGE FROM PRINCIPAL */
+    .p {
+      width: 85%;
+      margin-left: 15%;
+      margin-top: -15px;
+      padding: 15px;
+      font-size: 16px;
+      text-align: justify;
+      line-height: 1.6;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 0 0 8px 8px;
+    }
+
+    /* NOTIFICATION AREA OF COLLEGE */
+    .notification-container {
+      width: 90%;
+      margin: 25px auto;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .notification-header {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #0b3f33;
+      padding-bottom: 5px;
+      color: #0b3f33;
+    }
+
+    .notification {
+      padding: 12px;
+      border-left: 5px solid #0b3f33;
+      background-color: #f9f9f9;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .notification:hover {
+      background-color: #b4f4e5;
+    }
+
+    .notification-title {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .notification-date {
+      font-size: 0.8em;
+      color: #777;
+      margin-bottom: 5px;
+    }
+
+    .notification-body {
+      font-size: 0.9em;
+    }
+
+    .notification-body a {
+      color: #0b3f33;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .notification-body a:hover {
+      text-decoration: underline;
+    }
+
+    /* GALLERY SECTION */
+    .gallery-section {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    .gallery-section h2 a {
+      color: #0b3f33;
+      text-decoration: none;
+      font-size: 24px;
+    }
+
+    .gallery-section h2 a:hover {
+      color: #02a57f;
+    }
+
+    .g {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+
+    #H {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border: 2px solid #ff3d0036;
+      border-radius: 13px;
+      box-shadow: 4px 7px 7px 0px #00000042;
+      cursor: pointer;
+      margin: 10px;
+      transition: 400ms;
+    }
+
+    #H:hover {
+      filter: grayscale(0);
+      transform: scale(1.03);
+    }
+
+    /* BOTTOM INTERFACE OF WEBSITE */
+    footer {
+      background-color: #0b3f33;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      padding: 0 10px;
+    }
+
+    .content h4 {
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .content li {
+      margin: 8px 0;
+    }
+
+    .content li a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s ease-in-out;
+      font-size: 15px;
+    }
+
+    .content ul li a:hover {
+      color: #02a57f;
+    }
+
+    .end {
+      margin-top: 20px;
+      font-size: 14px;
+      border-top: 1px solid #555;
+      padding-top: 10px;
+    }
+
+    /* RESPONSIVE MEDIA QUERIES */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+      
+      .contact h6 {
+        font-size: 16px;
+      }
+      
+      .bar a {
+        padding: 15px 20px;
+        font-size: 18px;
+      }
+      
+      .c {
+        width: 85%;
+        font-size: 18px;
+      }
+      
+      .con {
+        width: 85%;
+      }
+      
+      #left {
+        width: 200px;
+        margin-left: 7.5%;
+      }
+      
+      .p {
+        width: 68%;
+        margin-left: 25%;
+        font-size: 17px;
+      }
+      
+      .notification-container {
+        max-width: 800px;
+      }
+      
+      .gallery-section h2 a {
+        font-size: 28px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .content {
+        width: calc(25% - 40px);
+      }
+      
+      .images img {
+        width: 300px;
+        height: 200px;
+      }
+      
+      #H {
+        width: 400px;
+        height: 250px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .contact {
+        text-align: center;
+      }
+      
+      .contact h6 {
+        margin-right: 0;
+      }
+      
+      .p {
+        width: 90%;
+        margin-left: 10%;
+        margin-top: 10px;
+        border-radius: 0 0 8px 8px;
+      }
+      
+      #left {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0;
+      }
+      
+      .con {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="lt">
+    <img src="OIP.jpg" alt="College Logo">
+  </div>
+  <div class="contact">
+    <h1>M.C.M DAV College Kangra(H.P)
+      <h6>PhoneNo:01892-26500<br> Email:dav_kangra@yahoo.in</h6>
+    </h1>
+  </div>
+  
+  <nav class="bar">
+    <ul>
+      <li><a href="site.html">Home</a></li>
+      <li><a href="Admission.html">Admission</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="images">
+      <img src="collage.jpg" alt="College Building">
+      <img src="collage2.jpg" alt="College Campus">
+      <img src="collage3.jpg" alt="College Event">
+      <img src="ci.jpg" alt="College Infrastructure">
+  </div>
+
+  <div class="c">
+    <p>MCM DAV College Kangra is a strong link in the chain of DAV institutions that have come to serve the cause of
+      education and social upliftment not only in our country but also in many foreign countries like USA, UK, Japan,
+      Mauritius, Nepal etc. After the reorganization of states, a need for an institution of higher education was felt
+      in this area, as the entire Kangra district had only one Government College. In 1975 DAV College Kangra was
+      established. It was later renamed as MCM DAV College in memory of the great jurist from the area -Sh Mehar Chand
+      Mahajan. The College was established in an area which was then educationally and economically backward. In the
+      last four decades of service the College can proudly claim to have substantially changed the education scenario.
+      Our pass outs have excelled in every field – academics, bureaucracy, armed forces, sports, business, private
+      sector, and even in politics and governance. An educational institution does not need any testimonials other than
+      students who excel, and are productive citizens.</p>
+  </div>
+
+  <div class="con">
+    <h3 id="a">Message from principal</h3>
+    <h2 id="b">Dr Baljeet Singh </h2>
+  </div>
+
+  <img src="collagep.jpg" title="Dr.Baljeet Singh" id="left" alt="Principal's Photo">
+  <div class="p">
+    <p>Dear Students, I extend to you all a very warm welcome to MCM DAV College Kangra, one of the prestigious
+      institutions of higher education in the state. Our endeavour is to provide high quality education to the students.
+      Education literally means to provide 'training of the mind'. To provide holistic education is also one of our
+      goals.
+      The college emphasises the importance of critical thinking and problem­ solving skills as well as promoting love
+      of
+      learning and curiosity. The college tries to provide 'equitable and inclusive education' so that no student is
+      denied access to quality education because of their socio- cultural background. It is also our constant effort
+      that
+      the students should develop global perspectives. This is my firm belief that the rich values and traditions
+      imbibed
+      here would carry you to the greater heights. Education is about awakening-Awakening to the power and beauty that
+      lies within all of us. To my mind education is about building character, enriching minds and serving humanity.
+      According to Confucius: 'Education breeds confidence. Confidence breeds hope. Hope breeds peace'. Always remember
+      that when it comes to success, there are absolutely no short cuts. Ralph Waldo Emerson, the American novelist and
+      essayist has well said: "I never dreamed about success, I worked for success". With proud legacy of 48 years, the
+      college has excelled in every field. Many students have registered their presence in the merit lists of the
+      University, others have brought laurels in cultural and sports activities. Students educated from the college have
+      carved a niche for themselves in various fields at national and international levels. Our excellence is not just
+      confined to the classrooms, we are also quite active in conducting conferences, workshops, seminars, talks, guest
+      lectures and other co-curricular activities. These activities expose students to aspects beyond the curriculum,
+      thus
+      adding high value to their professional success. The magnificent infrastructure of our college sets the right
+      ambience for an excellent teaching learning environment. The parents are the most strengthening power in moulding
+      the future of children. Their consistent support empowers us to do more and more. I pay my gratitude to them for
+      their faith in us. I, on behalf of DAV College Managing Committee, welcome all the students and wish you all the
+      best for achieving greater success and scaling new heights in the coming session. With blessings and warm wishes
+      Dr.
+      Baljeet Singh Patial</p>
+  </div>
+
+  <div class="notification-container">
+    <div class="notification-header">Notifications & Circulars</div>
+
+    <div class="notification">
+      <div class="notification-title">New Circular Released</div>
+      <div class="notification-date">April 20, 2025</div>
+      <div class="notification-body">
+        The collage has issued a new circular regarding the updated academic calendar for 2025.
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification-title">Maintenance Notification</div>
+      <div class="notification-date">April 18, 2025</div>
+      <div class="notification-body">
+        Website maintenance is scheduled from 10 PM to 2 AM. Expect temporary unavailability.
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification-title">Admissions Open</div>
+      <div class="notification-date">April 18, 2025</div>
+      <div class="notification-body">
+        Admissions for accadamic session 2025-26 open for UG&PG
+        <a href="Admission.html"> click here </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-section">
+    <h2><a href="gallery.html" id="z">Gallery</a></h2>
+    <div class="g">
+      <img src="collage3.jpg" id="H" alt="College Gallery Image 1">
+      <img src="ci.jpg" id="H" alt="College Gallery Image 2">
+      <img src="ci2.jpg" id="H" alt="College Gallery Image 3">
+      <img src="ci3.jpg" id="H" alt="College Gallery Image 4">
+      <img src="OIP (1).jpg" id="H" alt="College Gallery Image 5">
+      <img src="c15.jpeg" id="H" alt="College Gallery Image 6">
+    </div>
+  </div>
+
+  <footer>
+    <div class="bottom">
+      <div class="content">
+        <h4>Form Link</h4>
+        <ul>
+          <li><a href="Admission.html">Addmision</a></li>
+          <li><a href="oi.html">Online Inquiry </a></li>
+          <li><a href="grc.html">Grievance Redressal Cell</a></li> 
+          <li><a href="cr.html">Committee Against Caste And Other Types Of Discrimination</a></li> 
+        </ul>
+      </div>
+      <div class="content">
+        <h4>Other Links</h4>
+        <ul>
+          <li><a href="Arc.html">Anti Ragging Cell</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="wgc.html">Women Grievance Cell</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <h4>College</h4>
+        <ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="Admission.html">Addmision</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="fees.html">Fees Payment</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h4>Contact</h4>
+        <p>Kangra H.P. 176001</p>
+        <p>Email: info@davkangra.in</p>
+        <p>Phone:+91-1892-265002</p>
+      </div>
+    </div>
+    <div class="end">
+      <p>&copy; 2025 M.C.M DAV College Kangra(H.P). All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

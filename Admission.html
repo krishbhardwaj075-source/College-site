@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url(bg.jpg);
+            height: 100bh;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <form action="pay1.html">
+        <h1>
+            <center><u>Admission Form </u></center>
+        </h1>
+        <!-- DETAIL ABOUT STUDENT IS MENTION HERE -->
+        <h2>Student details</h2>
+        Name:<input type="text"><br><br>
+        PhoneNo:<input type="text"><br><br>
+        Date of birth:<input type="date"><br><br>
+        AadharNo:<input type="text"><br>
+        <h2>Select your Gender</h2>
+        <label for="Gender">
+            <input type="radio" name="Gender" id="">Male<br>
+            <label for="Gender">
+                <input type="radio" name="Gender" id="">Female<br>
+                <label for="Gender">
+                    <input type="radio" name="Gender" id="">Transgender<br>
+                </label>
+                <!-- DETAIL ABOUT PARENTS  -->
+                <h2>Parents details</h2>
+                Father Name:<input type="text"><br><br>
+                Mother Name:<input type="text"><br><br>
+                PhoneNo(Mother):<input type="text"><br><br>
+                PhoneNo(Father):<input type="text"><br><br>
+                AadharNo(Mother):<input type="text"><br><br>
+                AadharNo(Father):<input type="text"><br>
+                <h2>Select your Course</h2>
+                <!-- COURSES DETAIL  -->
+                <h3>After Matriculation course</h3>
+                11th <select aria-valuetext="11th" id="11th">
+                    <option value="11th" value="Medical">---Select---</option>
+                    <option value="11th" value="Medical">Medical</option>
+                    <option value="11th" value="Non-Medical">Non-Medical</option>
+                    <option value="11th" value="Commarce">Commarce</option>
+                    <option value="11th" value="Arts">Arts</option>
+                </select>
+                <!-- U.G COURSES DETAILS -->
+                <h3>Course(U.G)</h3>
+                <label for="B.sc">
+                    B.sc<select aria-valuetext="B.sc" id="B.sc">
+                        <option value="Select" value="Select">---Select---</option>
+                        <option value="Math" name="Math">Math Major</option>
+                        <option value="Physics" value="Physics">Physics Major</option>
+                        <option value="Chemistry" value="Chemistry">Chemistry Major </option>
+                        <option value="Nursing" value="Nursing">Nursing</option>
+                        <option value="Botony" value="Botony">Botony</option><br><br>
+                    </select></label><br>
+                B.A<select aria-valuetext="BA" id="BA">
+                    <label for="B.A">
+                        <option value="Select" value="Select">---Select---</option>
+                        <option value="History" value="History">History Major</option>
+                        <option value="Math" value="Math">Math Major</option>
+                        <option value="Pol.science" value="Pol.science">Pol.science Major </option>
+                        <option value="Medical" value="">Geography Major</option>
+                        <option value="Ecnomics" value="Ecnomics">Ecnomics Major</option>
+                </select>
+            </label><br>
+            <label for="course">
+                <input type="radio" name="course"> B.com<BR>
+                <label for="course">
+                    <input type="radio" name="course"> BCA<BR>
+                    <label for="course">
+                        <input type="radio" name="course">BBA<BR>
+                        <label for="course">
+                            <input type="radio" name="course">B.HM
+                        </label>
+                        <!-- PG COURSES DETAIL -->
+                        <h3>Course(P.G)</h3>
+                        M.sc<select aria-valuetext="M.sc" id="M.sc">
+                            <option value="Select" value="Select">---Select---</option>
+                            <option value="Math" value="Math">Math Major</option>
+                            <option value="Physics" value="Physics">Physics Major</option>
+                            <option value="Chemistry" value="Chemistry">Chemistry Major </option>
+                            <option value="Nursing" value="Nursing">Nursing</option>
+                            <option value="Botony" value="Botony">Botony</option><br><br>
+                        </select><br>
+                        M.A<select aria-valuetext="M.A" id="M.A">
+                            <option value="select" value="select">---Select---</option>
+                            <option value="History" value="History">History Major</option>
+                            <option value="Math" value="Math">Math Major</option>
+                            <option value="Pol.science" value="Pol.science">Pol.scienceMajor </option>
+                            <option value="Geography" value="Geography">Geography Major</option>
+                            <option value="Ecnomics" value="Ecnomics">Ecnomics Major</option>
+                        </select><br>
+                        <label for="course">
+                            <input type="radio" name="course"> M.com<BR>
+                            <input type="radio" name="course"> M.C.A<BR>
+                            <input type="radio" name="course">MBA<BR>
+                        </label>
+                        <!-- MARKS DETAIL OF STUDENT -->
+                        <h2>Marks Details </h2>
+                        10th Marks(in %) :<input type="text" size="5"><br>
+                        12th Marks(in %) :<input type="text" size="5"><br>
+                        Last Year/sem(GPA/SGPA if any):<input type="text" size="5"><br>
+                        <!-- ADDRESS DETAILS OF STUDENT -->
+                        <h2>Address Details</h2>
+                        State: <select aria-valuetext="11th" id="11th">
+                            <option value="State" value="Select">---Select---</option>
+                            <option value="Andhra Pradesh" value="Medical">Andhra Pradesh</option>
+                            <option value="Arunachal Pradesh" value="Medical">Arunachal Pradesh</option>
+                            <option value="Assam" value="Assam">Assam</option>
+                            <option value="Bihar" value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh" value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Chandigarh" value="Chandigarh">Chandigarh</option>
+                            <option value="Delhi" value="Delhi">Delhi</option>
+                            <option value="Gujarat" value="Gujarat">Gujarat</option>
+                            <option value="Haryana" value="Haryana">Haryana</option>
+                            <option value="Jharkhand" value="Jharkhand">Jharkhand</option>
+                            <option value="Jammu and Kashmir" value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Karnataka" value="Karnataka">Karnataka</option>
+                            <option value="Kerala" value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh" value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra" value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur" value="Manipur">Manipur</option>
+                            <option value="Meghalaya" value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram" value="Mizoram">Mizoram</option>
+                            <option value="Nagaland" value="Nagaland">Nagaland</option>
+                            <option value="Odisha" value="Odisha">Odisha</option>
+                            <option value="Punjab" value="Punjab">Punjab</option>
+                            <option value="Rajasthan" value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim" value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu" value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana" value="Telangana">Telangana</option>
+                            <option value="Tripura" value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh" value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand" value="Uttarakhand">Uttarakhand</option>
+                            <option value="west Bengal" value="West Bengal">West Bengal</option>
+                        </select><br><br>
+                        City:<input type="text" size="20"><br><br>
+                        Pincode:<input type="text" size="7"><br><br>
+                        Flat/HouseNo:<input type="text"><br>
+                        <h4>Please enter your full address</h4>
+                        <textarea name="Address"></textarea><br><br>
+                        <!-- OTHER INFORMATION -->
+                        <h2>Other Information</h2>
+                        <label for="Physically">
+                            Are you Physically Hendicap: yes<input type="radio" name="Physically"> No<input type="radio"
+                                name="Physically"><br><br>
+                            <label for="EWS">
+                                Are you from EWS: yes<input type="radio" name="EWS"> No<input type="radio"
+                                    name="EWS"><br><br>
+                            </label>
+                            <!-- BUTTON DETAIL -->
+                            <input type="reset">
+                            <button>Submit</button>
+    </form>
+</body>
+</html>

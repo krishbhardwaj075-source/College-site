@@ -1,0 +1,255 @@
+/* NAME OF COLLEGE  */
+body {
+    margin: 0;
+    background-color: rgb(248, 239, 228);
+}
+.college h2 {
+    text-align: center;
+    color: rgb(11, 11, 88);
+    width: 25vw;
+    margin-left: 40vw;
+    padding: 30px;
+    max-width: max-content;
+    padding: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.college {
+    background-color: rgba(241, 216, 166, 0.815);
+    height: 110px;
+    margin-top: -50px;
+    margin-left: -40px
+}
+/* TITLE OF PAGE IN MENTION(CONTACT US) */
+.conatiner h1 {
+    text-align: center;
+    color:  #22a889 ;
+    width: 25vw;
+    margin-left: 40vw;
+    padding: 30px;
+    max-width: max-content;
+}
+h2 {
+    text-align: center;
+}
+
+.conatiner {
+    background-image: url(blur3.jpg);
+    height: 100px;
+    margin-top: -39px;
+}
+/* CONTENT WRITTEN IN BOTTOM OF CONTACT US BAR */
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+#contact {
+    text-align: center;
+    color: rgb(45, 45, 103);
+}
+
+#line {
+    border: solid black 1px;
+}
+/* BOX WHERE NAME AND OTHER DETAILS ARER WRITTEN */
+.message {
+    height: 48vw;
+    border: solid gray;
+    width: 40vw;
+    display: flex;
+    margin-left: 30vw;
+    box-shadow: 1px 5px 10px 0px;
+}
+/* DROP MESSAGE WRITTEN INSIDE THE BOX */
+#center {
+    text-align: center;
+    margin-left: 40px;
+    font-size: 25px;
+    color: rgb(31, 147, 31);
+}
+
+.right input {
+    margin-left: -10vw;
+}
+
+#left {
+    margin-left: -11vw;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#top {
+    margin-left: -10vw;
+    height: 15vw;
+    width: 12vw;
+}
+/* BUTTONS */
+.submit {
+    margin-left: -10vw;
+    background-color: rgb(28, 175, 28);
+    color: white;
+    width: 5vw;
+    height: 2vw;
+    border: solid rgb(28, 175, 28);
+}
+
+.submit:hover {
+    background-color: green;
+}
+.Reset {
+    margin-left: 1vw;
+    background-color: rgb(28, 175, 28);
+    color: white;
+    width: 5vw;
+    height: 2vw;
+    border: solid rgb(28, 175, 28);
+}
+
+.Reset:hover {
+    background-color: green;
+}
+/* BOXES WHERE ADDRESS,E-MAIL AND
+CONTACT DETAILS ARE WRITTEN  */
+.address {
+    background-color: rgb(168, 29, 29);
+    color: white;
+    height: 9vw;
+    width: 18vw;
+    ;
+    margin-left: 60vw;
+    margin-top: -45vw;
+    border: solid rgb(168, 29, 29) 5px;
+}
+
+.address:hover {
+    filter: grayscale(0);
+    transform: scale(1.03);
+}
+
+.email:hover {
+    filter: grayscale(0);
+    transform: scale(1.03);
+}
+
+.number:hover {
+    filter: grayscale(0);
+    transform: scale(1.03);
+}
+
+.id {
+    font-size: 25px;
+    padding: 20px;
+    color: black;
+}
+
+.p {
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.email {
+    background-color: rgb(168, 29, 29);
+    color: white;
+    height: 9vw;
+    width: 18vw;
+    ;
+    margin-left: 60vw;
+    margin-top: 3vw;
+    border: solid rgb(168, 29, 29) 5px;
+}
+
+.em {
+    font-size: 25px;
+    padding: 20px;
+    color: black;
+}
+
+.d {
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.number {
+    background-color: rgb(168, 29, 29);
+    color: white;
+    height: 18vw;
+    width: 18vw;
+    ;
+    margin-left: 60vw;
+    margin-top: 3vw;
+    border: solid rgb(168, 29, 29) 5px;
+}
+
+.c {
+    font-size: 25px;
+    padding: 10px;
+    margin-top: -10px;
+    color: black;
+}
+
+.e {
+    margin-top: -20px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+/* LOCTION OF G MAP */
+#image {
+    margin-top: 30px;
+    height: 50%;
+    width: 100%;
+    border-radius: 20px;
+}
+  /* BOTTOM OF PAGE */
+  footer {
+    background-color: #0b3f33;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .bottom{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+  
+  .content{
+    max-width: 300px;
+    margin: 10px;
+  }
+  
+  .content h4 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .content li {
+    margin: 5px 0;
+  }
+  
+  .content li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .content ul li a:hover {
+    color:  #02a57f;
+    transform: scale(1.03);
+  }
+  
+  .end{
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+  }

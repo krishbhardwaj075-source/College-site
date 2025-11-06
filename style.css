@@ -1,0 +1,278 @@
+/* MAIN BODY OF WEBSITE */
+body {
+  font-family: Arial, sans-serif;
+  background-color: wheat;
+  margin: 0;
+  padding: 20px;
+}
+
+/* LOGO OF COLLEGE */
+.lt {
+  width: 1000px;
+  height: 20px;
+  border: 5px;
+  mix-blend-mode: darken;
+  margin-left: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0b3f33;
+}
+
+/* CONTACT SHOWN ON TOP RIGHT OF WEBSITE */
+.contact {
+  text-align: right;
+  height: 7vw;
+}
+
+h6 {
+  font-size: 18px;
+  margin-right: 40px;
+  margin-top: -30px;
+}
+
+/* BAR THAT CANTAIN VARIOUS TABS */
+.bar ul {
+  list-style-type: none;
+  background-color: #0b3f33;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.bar ul li {
+  display: inline-block;
+  margin: 0 39px;
+}
+
+.bar a {
+  color: rgb(200, 225, 203);
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+
+}
+
+.bar li {
+  float: left;
+
+}
+
+.bar a:hover {
+  background-color: #023429;
+}
+
+/* IMAGES DOWNWARD TO MENU AREA */
+.images {
+  width: 100%;
+  height: 70%;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.images img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+/* DISCRIPTION ABOUT COLLEGE */
+.c {
+
+  height: 20vw;
+  width: 85vw;
+  margin-left: 10vw;
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* BAR WHERE NAME AND MENTION OF PRINCIPAL MENTION */
+.con {
+  background-color: #0b3f33;
+  width: 85vw;
+  margin-left: 10vw;
+
+}
+
+#a {
+  color: #02a57f;
+}
+
+#b {
+  color: white;
+}
+
+/* IMAGE ALIGNMENT OF PRINCIPAL */
+#left {
+  height: 18vw;
+  margin-top: -19.5px;
+  margin-left: 10vw;
+}
+
+/* MESSAGE FROM PRINCIPAL */
+.p {
+  height: 37vw;
+  width: 68vw;
+  margin-left: 25vw;
+  margin-top: -19vw;
+  font-size: 17px;
+  text-align: justify;
+}
+
+/* NOTIFICATION AREA OF COLLEGE */
+.notification-container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0b3f33;
+  padding-bottom: 5px;
+  color: #0b3f33;
+}
+
+.notification {
+  padding: 15px;
+  border-left: 5px solid #0b3f33;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.notification:hover {
+  background-color: #b4f4e5;
+}
+
+.notification-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.notification-date {
+  font-size: 0.85em;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.notification-body {
+  font-size: 0.95em;
+  text-decoration: none;
+}
+
+/* GALLERY OF COLLEGE */
+.g {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* IMAGES IN GALLERY */
+#H {
+  width: 40vwx;
+  height: 20vw;
+  border: 2px solid#ff3d0036;
+  border-radius: 13px;
+  box-shadow: 4px 7px 7px 0px #00000042;
+  cursor: pointer;
+  margin: 10px;
+  transition: 400ms;
+}
+
+#H:hover {
+  filter: grayscale(0);
+  transform: scale(1.03);
+}
+
+/* GALLERY TEXT DOWNWORD TO NOTIFICATION AREA */
+#z {
+  margin-left: 44vw;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+/* BOTTOM AREA OF WEBSITE*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #0b3f33;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.content {
+  max-width: 300px;
+  margin: 10px;
+}
+
+.content h4 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content li {
+  margin: 5px 0;
+}
+
+.content li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.content ul li a:hover {
+  color: #02a57f;
+  transform: scale(1.03);
+}
+
+.end {
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+}
